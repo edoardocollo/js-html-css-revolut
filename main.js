@@ -1,15 +1,11 @@
-var linkLista = $('li');
-linkLista.hover(function(){
-  jQuery('.palette', this).toggle();
-});
-
-
-
-
-
 // var wrapper = $('.wrapper');
-// // var ul = $('ul');
-// var paletteWrapper = $('.palette_wrapper');
 // wrapper.hover(function(){
-//   jQuery('.palette_wrapper', this).toggle();
+//   jQuery('.palette', this).toggle();
 // });
+var link = $('.wrapper');
+link.mouseenter(function(){
+  jQuery('.dropdown_palette', this).show();
+});
+link.mouseleave(function(){
+  jQuery('.dropdown_palette', this).hide();
+});
