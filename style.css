@@ -12,6 +12,9 @@ a {
   text-decoration: none;
   color: #a5abb1;
 }
+a:hover {
+  color: black;
+}
 
 /* NAV */
 
