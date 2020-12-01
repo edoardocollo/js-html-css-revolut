@@ -1,22 +1,32 @@
+/* reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* general */
+body {
+  font-family: 'Roboto', sans-serif;
+}
 a {
   text-decoration: none;
-  color: black;
+  color: #a5abb1;
 }
+
+/* NAV */
+
 nav {
   padding-top: 15px;
   display: flex;
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
+
+/* left menu nav */
 #menu_left {
   display: flex;
   height: 50px;
-  width: 30%;
+  width: 40%;
 }
 #menu_left img {
   height: 30px;
@@ -33,11 +43,16 @@ nav {
 #menu_left ul li a {
   text-transform: uppercase;
 }
+#menu_left ul li:first-child a{
+color: black;
+}
+
+/* right menu nav */
 #menu_right {
   height: 30px;
   display: flex;
   align-items: center;
-  width: 70%;
+  width: 60%;
 }
 .link_wrapper {
   display: flex;
@@ -58,11 +73,14 @@ nav {
 .wrapper a {
   text-transform: capitalize;
 }
+
+/* drop down menu palette */
 .wrapper_dropdown {
   display: flex;
   padding: 0 10px;
-  background-color: #ececec;
+  line-height: 30px;
   border-radius: 5px;
+   box-shadow: 0px 0px 10px 1px #888888;
 }
 .wrapper_dropdown ul {
   padding: 10px 0;
@@ -75,13 +93,27 @@ nav {
   display: none;
   margin-top: 10px
 }
-button {
-  border: 0;
-  background-color: violet;
-  padding: 5px 15px;
-  margin-left: 10px;
-  border-radius: 10px;
+.new {
+  color: #eb008d;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 10px;
+  vertical-align: top;
 }
-select {
+
+/* button app download */
+button {
+  color: white;
   border: 0;
+  background-color: #eb008d;
+  padding: 8px 20px;
+  margin-left: 10px;
+  border-radius: 15px;
+}
+
+/* lang select */
+select {
+  color: #a5abb1;
+  border: 0;
+  background-color: #fff;
 }
